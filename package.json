@@ -1,0 +1,38 @@
+{
+  "name": "electron-app-xlsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "build": "electron-builder --mac",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-xlsx": "^0.15.0"
+  },
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "devtron": "^1.4.0",
+    "electron": "^8.2.4",
+    "electron-builder": "^22.6.0"
+  },
+  "build": {
+    "appId": "test.app",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小猫专属</title>
+  <style>
+    html {
+      background-color: #fff;
+    }
+    #app {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #content{
+      background: red;
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="select">选择文件</div>
+    <!-- <div>选择输出文件夹</div> -->
+    <div id="content"></div>
+    <button id="submit">确定</button>
+  </div>
+  <script src="./js/app-xlsx.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
